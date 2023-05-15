@@ -11,10 +11,6 @@ public class LogSystem {
         this.logger = LoggerFactory.getLogger("main");
     }
 
-    public void load() {
-
-    }
-
     public Logger getLogger() {
         return logger;
     }

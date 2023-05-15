@@ -6,7 +6,7 @@
 
     <groupId>com.bluenet</groupId>
     <artifactId>discordbot</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <pluginRepositories>
         <pluginRepository>
@@ -18,10 +18,11 @@
     <properties>
         <version>${project.version}</version>
         <autostart>false</autostart>
+        <autoUpdate>false</autoUpdate>
         <encryptionKey>CHANGE_TO_29_CHARS_LONG_STRING</encryptionKey>
         <workingDirectory>./</workingDirectory>
+        <configurationDirectory>$workingDir/configuration</configurationDirectory>
         <saveDirectory>$workingDir/data</saveDirectory>
-        <logFiles>$workingDir/logs</logFiles>
     </properties>
 
     <repositories>

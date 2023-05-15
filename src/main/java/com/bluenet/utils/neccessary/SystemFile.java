@@ -37,6 +37,10 @@ public class SystemFile {
         return Boolean.getBoolean(getProperties().getProperty("autostart"));
     }
 
+    public boolean isAutoUpdate() {
+        return Boolean.getBoolean(getProperties().getProperty("autoUpdate"));
+    }
+
     public String encryptionKey() {
         return getProperties().getProperty("encryptionKey");
     }
@@ -49,6 +53,11 @@ public class SystemFile {
         return new File(getProperties().getProperty("saveDirectory").replace("$workingDir", workingDirectory().getPath()));
     }
 
+    public File configurationDirectory() {
+        return new File(getProperties().getProperty("configurationDirectory").replace("$workingDir", workingDirectory().getPath()));
+    }
+
+    @Deprecated(forRemoval = true, since = "1.0.1-SNAPSHOT")
     public File logDirectory() {
         return new File(getProperties().getProperty("logFiles").replace("$workingDir", workingDirectory().getPath()));
     }

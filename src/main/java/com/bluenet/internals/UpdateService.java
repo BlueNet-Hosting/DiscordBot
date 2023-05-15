@@ -1,8 +1,8 @@
-package com.bluenet.boot;
+package com.bluenet.internals;
 
 public class UpdateService {
 
-    public void UpdateService() {
+    public UpdateService() {
 
     }
 
