@@ -1,19 +1,18 @@
 package com.bluenet.database;
 
+import lombok.Getter;
+
 public enum SQLTable {
 
     TEST(""), TEST_2("")
     ;
 
+    @Getter
     private final String defaultTable;
     private String tableName;
 
     SQLTable(final String defaultTable) {
         this.defaultTable = defaultTable;
-    }
-
-    public String getDefaultTable() {
-        return defaultTable;
     }
 
     public String tableName() {

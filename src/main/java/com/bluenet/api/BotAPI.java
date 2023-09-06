@@ -6,7 +6,7 @@ import com.bluenet.utils.security.Ciphers;
 
 public class BotAPI {
 
-    private static DiscordBot main = DiscordBot.getInstance();
+    private static final DiscordBot main = DiscordBot.getInstance();
 
     public Ciphers getSecurity() {
         try {
