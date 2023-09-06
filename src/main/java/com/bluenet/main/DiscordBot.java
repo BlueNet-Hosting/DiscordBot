@@ -7,12 +7,15 @@ import com.bluenet.internals.UpdateService;
 import com.bluenet.logger.LogSystem;
 import com.bluenet.utils.neccessary.SystemFile;
 import com.bluenet.utils.neccessary.VersionChecker;
+import lombok.Getter;
 
 import java.io.File;
 import java.io.IOException;
 
+@Getter
 public class DiscordBot {
 
+    @Getter
     private static DiscordBot instance;
     private LogSystem logSystem;
     private SystemFile systemFiles;
@@ -36,28 +39,6 @@ public class DiscordBot {
             System.exit(0);
             throw new RuntimeException(e);
         }
-    }
-
-    public static DiscordBot getInstance() { return instance; }
-
-    public LogSystem getLogSystem() {
-        return logSystem;
-    }
-
-    public SystemFile getSystemFiles() {
-        return systemFiles;
-    }
-
-    public VersionChecker getVersionChecker() {
-        return versionChecker;
-    }
-
-    public ConsoleThread getConsoleThread() {
-        return consoleThread;
-    }
-
-    public UpdateService getUpdateService() {
-        return updateService;
     }
 
     public static void setupFinish() {

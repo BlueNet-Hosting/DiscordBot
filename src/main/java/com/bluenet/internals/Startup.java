@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class Startup {
 
-    private static DiscordBot discordBot = DiscordBot.getInstance();
-    private static Logger logger = discordBot.getLogSystem().getLogger();
+    private static final DiscordBot discordBot = DiscordBot.getInstance();
+    private static final Logger logger = discordBot.getLogSystem().getLogger();
     private static boolean accepted;
     private static boolean firstBoot = false;
 
