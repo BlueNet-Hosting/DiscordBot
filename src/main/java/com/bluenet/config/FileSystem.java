@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class FileSystem {
 
-    private Logger logger;
-    private File configuration;
-    private File mysql;
+    private final Logger logger;
+    private final File configuration;
+    private final File mysql;
 
     public FileSystem(Logger logger) {
         this.logger = logger;

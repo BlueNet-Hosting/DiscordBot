@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class ShutdownProcess {
 
-    private Logger logger;
+    private final Logger logger;
 
     public ShutdownProcess(Logger logger) {
         this.logger = logger;
